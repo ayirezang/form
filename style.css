@@ -1,0 +1,36 @@
+:root {
+  /*primary*/
+  --green-200: hsl(148, 38%, 91%);
+  --green-600: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+
+  /**neutral*/
+
+  --White: hsl(0, 0%, 100%);
+  --Grey-500: hsl(186, 15%, 59%);
+  --Grey-900: hsl(187, 24%, 22%);
+}
+
+body {
+  background-color: var(--green-200);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+}
+#heading {
+  flex-direction: initial;
+  font-size: medium;
+  font-weight: 300;
+}
