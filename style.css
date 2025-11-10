@@ -2,13 +2,13 @@
   /*primary*/
   --green-200: hsl(148, 38%, 91%);
   --green-600: hsl(169, 82%, 27%);
-  --Red: hsl(0, 66%, 54%);
+  --red: hsl(0, 66%, 54%);
 
   /**neutral*/
 
-  --White: hsl(0, 0%, 100%);
-  --Grey-500: hsl(186, 15%, 59%);
-  --Grey-900: hsl(187, 24%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(186, 15%, 59%);
+  --grey-900: hsl(187, 24%, 22%);
 }
 
 body {
@@ -28,9 +28,23 @@ body {
   background-color: var(--white);
   padding: 30px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 #heading {
   flex-direction: initial;
   font-size: medium;
   font-weight: 300;
+}
+.FNL {
+  display: flex;
+}
+label {
+  display: block;
+}
+
+.email {
+  width: 100%;
 }
