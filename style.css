@@ -10,6 +10,9 @@
   --grey-500: hsl(186, 15%, 59%);
   --grey-900: hsl(187, 24%, 22%);
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--green-200);
@@ -24,9 +27,9 @@ body {
 
 .container {
   display: flex;
-  max-width: 600px;
+  max-width: 100%;
   background-color: var(--white);
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -40,11 +43,53 @@ body {
 }
 .FNL {
   display: flex;
-}
-label {
-  display: block;
+  gap: 8px;
 }
 
-.email {
+.FNL > div {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.query {
+  display: flex;
+  gap: 10px;
+}
+
+.radioInput {
+  display: flex;
+  gap: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 5px;
   width: 100%;
+}
+.checkbox {
+  display: flex;
+  gap: 3px;
+}
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+.input1 {
+  border-radius: 5px;
+  padding: 8px;
+  background-color: var(--green-600);
+  outline: none;
+}
+.required ::after {
+  content: "*";
+  color: var(--green-200);
+  font-weight: bold;
 }

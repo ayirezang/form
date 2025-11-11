@@ -40,36 +40,48 @@
         <!--first name-->
         <div class="FNL">
           <div>
-            <label>first name</label>
-            <input type="text" name="first name" />
+            <label>First Name</label>
+            <input class="input" type="text" name="first name" />
           </div>
           <!--last name-->
           <div>
-            <label>last name </label>
-            <input type="text" name="lastname" />
+            <label>Last Name </label>
+            <input class="input" type="text" name="lastname" />
           </div>
         </div>
         <!--email address-->
         <div>
-          <label>email</label>
-          <input class="email" type="email" name="email" />
+          <label>Email</label>
+          <input class="input" type="email" name="email" />
         </div>
         <!--query-->
-        <div><input type="text" placeholder="general enquiry" /></div>
-        <!--support-->
-        <div>
-          <input type="text" placeholder="" />
+        <div class="">
+          <label for="query" class="required">Query Type</label>
+          <div class="query">
+            <div class="radioInput">
+              <input type="radio" />
+              <label>General Enquiry</label>
+            </div>
+            <!--support-->
+            <div class="radioInput">
+              <input class="radio" type="radio" />
+              <label>Support Request</label>
+            </div>
+          </div>
         </div>
         <!--textarea-->
 
         <div>
-          <label>message</label>
-          <input type="text" />
+          <label for="message" class="required">Message</label>
+          <textarea type="text" rows="5" cols="40"></textarea>
         </div>
         <!--consent check box with text-->
-        <div><input /><input /></div>
+        <div class="checkbox">
+          <input type="checkbox" />
+          <p>I consent to being contacted by the team</p>
+        </div>
         <!--button-->
-        <button></button>
+        <input class="input1" type="submit" value="Submit" />
       </form>
     </main>
   </body>
